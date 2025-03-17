@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesej Khas</title>
+    <style>
+        body {
+            background-color: #00FF00; /* Hijau terang */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            border: 10px dashed black; /* Border dashed */
+            padding: 50px;
+            text-align: center;
+            font-size: 50px;
+            background-color: white;
+            display: inline-block;
+            animation: rotateText 2s linear infinite;
+        }
+        img {
+            width: 300px; /* Saiz gambar */
+            height: auto;
+            margin-top: 20px;
+            animation: rotateText 2s linear infinite;
+        }
+        @keyframes rotateText {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        @keyframes blink {
+            0% { opacity: 1; }
+            50% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+        .blinking {
+            animation: blink 0.5s infinite;
+        }
+    </style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="https://www.myinstants.com/media/sounds/trollolololol.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="container">
+        <marquee behavior="alternate" direction="left" scrollamount="20">
+            <span class="blinking">Butoh Paq Hang🦧</span>
+        </marquee>
+    </div>
+    <img src="1000757804.jpg" alt="Gambar Lawak">
+</body>
+</html>

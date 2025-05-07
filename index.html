@@ -1,59 +1,141 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mesej Khas</title>
-    <style>
-        body {
-            background-color: #00FF00; /* Hijau terang */
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-        }
-        .container {
-            border: 10px dashed black; /* Border dashed */
-            padding: 50px;
-            text-align: center;
-            font-size: 50px;
-            background-color: white;
-            display: inline-block;
-            animation: rotateText 2s linear infinite;
-        }
-        img {
-            width: 300px; /* Saiz gambar */
-            height: auto;
-            margin-top: 20px;
-            animation: rotateText 2s linear infinite;
-        }
-        @keyframes rotateText {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        @keyframes blink {
-            0% { opacity: 1; }
-            50% { opacity: 0; }
-            100% { opacity: 1; }
-        }
-        .blinking {
-            animation: blink 0.5s infinite;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To You, From My Heart</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #ffe0ec, #fddde6);
+      color: #444;
+      padding: 2rem;
+      max-width: 700px;
+      margin: auto;
+      line-height: 1.7;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    h1 {
+      text-align: center;
+      color: #e91e63;
+      margin-bottom: 2rem;
+      font-size: 2.5rem;
+      animation: fadeInDown 1.5s ease;
+    }
+    p {
+      margin-bottom: 1.4rem;
+      animation: fadeIn 2s ease;
+    }
+    .footer {
+      margin-top: 3rem;
+      text-align: center;
+      font-style: italic;
+      color: #999;
+      animation: fadeInUp 2s ease;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ff9aa2;
+      transform: rotate(45deg);
+      animation: floatUp 8s infinite ease-in;
+      opacity: 0.7;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: #ff9aa2;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: -10px;
+      top: 0;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(0) rotate(45deg);
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-1000px) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    a {
+      color: #e91e63;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <audio autoplay loop>
-        <source src="https://www.myinstants.com/media/sounds/trollolololol.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-    <div class="container">
-        <marquee behavior="alternate" direction="left" scrollamount="20">
-            <span class="blinking">Butoh Paq Hang🦧</span>
-        </marquee>
-    </div>
-    <img src="https://jenzu27.github.io/thiccfoxgirl/1000757804.jpg" alt="Gambar Lawak">
+  <h1>To You, From My Heart</h1>
+
+  <p>I’m really sorry if I made you feel like I only care about your body. That was never my intention, but I understand why it might have felt that way. Honestly, I feel ashamed of myself. I hate the thought that I’ve hurt you or made you feel used.</p>
+
+  <p>The truth is, I’ve been feeling really lonely. I just want to feel like I matter to someone… like I can make someone happy and be wanted in return. But I see now that I went about it the wrong way, and it ended up hurting you. That’s the last thing I ever wanted to do.</p>
+
+  <p>I’m also sorry for the times I’ve misunderstood you, especially when you weren’t in a good mood. I know I’ve made things harder, and I regret that. But please know this you’re not a problem to me. You never were. I come from a toxic environment, but with you, it doesn’t feel worse. It actually feels better.</p>
+
+  <p>I know we’ve been getting better, and there are fewer arguments between us now. That’s progress, and I want to continue building on it, with more understanding and love.</p>
+
+  <p>I need you, but not in a selfish way. I need you because I love you. I want to be someone who brings peace, not pressure. Someone who supports you and makes you feel truly loved. I’m sorry I’ve fallen short of that. I’m going to do better, for you and for us.</p>
+
+  <p>I want to bother every single thing about you in the sweetest way. I want to know everything. Your thoughts when you can’t sleep, the little things that make you smile, the ones that make you upset. Please let me bother you, let me love you that deeply. Tell me everything. I want it all, because it’s you.</p>
+
+  <p>This isn’t the end for us. I won’t give up on you, and I never will.</p>
+
+  <p><strong>With love,<br>Jen the Kacak Men & Nana the Destroyer</strong></p>
+
+  <p><a href="#date-invite">Lessgo on a date after mid sem break, and I got tons of chocolate mann 🍫💕</a></p>
+
+  <div class="footer">
+    with love, always
+  </div>
+
+  <!-- Floating hearts -->
+  <script>
+    const heartCount = 20;
+    for (let i = 0; i < heartCount; i++) {
+      const heart = document.createElement("div");
+      heart.classList.add("heart");
+      heart.style.left = Math.random() * 100 + "vw";
+      heart.style.top = 100 + Math.random() * 100 + "vh";
+      heart.style.animationDuration = 6 + Math.random() * 5 + "s";
+      document.body.appendChild(heart);
+    }
+  </script>
 </body>
 </html>
